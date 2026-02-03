@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="2006 Peak GHG Emissions">
+  <style>
+    .bg{fill:#fbe9e7}
+    .title{font:700 28px/1.2 'Arial', sans-serif; fill:#b71c1c}
+    .sub{font:400 18px/1.2 'Arial', sans-serif; fill:#6d6d6d}
+  </style>
+  <rect class="bg" width="800" height="500" rx="12"/>
+  <g transform="translate(40,120)">
+    <text class="title">2006 — Peak GHG Emissions</text>
+    <text y="50" class="sub">Intel reached its highest annual greenhouse gas emissions</text>
+    <g transform="translate(0,110)">
+      <rect x="0" y="0" width="200" height="90" rx="8" fill="#ffffff" opacity="0.8" stroke="#b71c1c"/>
+      <text x="20" y="50" class="sub">Emissions</text>
+    </g>
+  </g>
+</svg>

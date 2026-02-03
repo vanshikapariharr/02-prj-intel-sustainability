@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="2020 RISE Strategy">
+  <style>
+    .bg{fill:#e8f5e9}
+    .title{font:700 28px/1.2 'Arial', sans-serif; fill:#1b5e20}
+    .sub{font:400 18px/1.2 'Arial', sans-serif; fill:#4b4b4b}
+  </style>
+  <rect class="bg" width="800" height="500" rx="12"/>
+  <g transform="translate(40,120)">
+    <text class="title">2020 — RISE Strategy</text>
+    <text y="50" class="sub">Responsible, Inclusive, Sustainable, Enabling</text>
+    <g transform="translate(0,110)">
+      <circle cx="40" cy="40" r="36" fill="#ffffff" opacity="0.9" stroke="#1b5e20"/>
+      <text x="80" y="50" class="sub">Sustainability Strategy</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="2023 Renewable Electricity">
+  <style>
+    .bg{fill:#fff8e1}
+    .title{font:700 28px/1.2 'Arial', sans-serif; fill:#ff8f00}
+    .sub{font:400 18px/1.2 'Arial', sans-serif; fill:#4b4b4b}
+  </style>
+  <rect class="bg" width="800" height="500" rx="12"/>
+  <g transform="translate(40,120)">
+    <text class="title">2023 — Renewable Electricity</text>
+    <text y="50" class="sub">Intel achieves 99% renewable electricity usage worldwide</text>
+    <g transform="translate(0,110)">
+      <rect x="0" y="0" width="220" height="80" rx="8" fill="#ffffff" opacity="0.9" stroke="#ff8f00"/>
+      <text x="20" y="50" class="sub">99% Renewable</text>
+    </g>
+  </g>
+</svg>

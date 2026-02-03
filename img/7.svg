@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="2022 Net-Zero By 2040">
+  <style>
+    .bg{fill:#e0f7fa}
+    .title{font:700 28px/1.2 'Arial', sans-serif; fill:#006064}
+    .sub{font:400 18px/1.2 'Arial', sans-serif; fill:#4b4b4b}
+  </style>
+  <rect class="bg" width="800" height="500" rx="12"/>
+  <g transform="translate(40,120)">
+    <text class="title">2022 — Net-Zero By 2040</text>
+    <text y="50" class="sub">Intel commits to net-zero greenhouse gas emissions by 2040</text>
+    <g transform="translate(0,110)">
+      <circle cx="40" cy="40" r="36" fill="#ffffff" opacity="0.9" stroke="#006064"/>
+      <text x="80" y="50" class="sub">Net-Zero Goal</text>
+    </g>
+  </g>
+</svg>

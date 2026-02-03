@@ -1,1 +1,261 @@
 /* Add your CSS here */
+/* ===================================
+   INTEL SUSTAINABILITY TIMELINE
+   CSS Stylesheet
+   =================================== */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+
+header {
+  background: linear-gradient(135deg, #0071c5 0%, #0054a6 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+header div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 30px;
+  filter: brightness(0) invert(1); /* Makes logo white */
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* ===================================
+   TIMELINE SECTION
+   =================================== */
+
+section {
+  padding: 60px 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #ffffff;
+  
+  /* Horizontal scrolling with flexbox */
+  display: flex;
+  gap: 30px;
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  
+  /* Hide scrollbar for cleaner look (optional) */
+  scrollbar-width: thin;
+  scrollbar-color: #0071c5 #e0e0e0;
+}
+
+/* Webkit browsers scrollbar styling */
+section::-webkit-scrollbar {
+  height: 10px;
+}
+
+section::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: #0071c5;
+  border-radius: 5px;
+}
+
+section::-webkit-scrollbar-thumb:hover {
+  background: #0054a6;
+}
+
+/* ===================================
+   TIMELINE CARDS
+   =================================== */
+
+section div {
+  /* Card sizing */
+  min-width: 300px;
+  max-width: 300px;
+  
+  /* Card styling */
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Prevent shrinking */
+  flex-shrink: 0;
+  
+  /* Transition for smooth hover effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Initial state - hide description */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card hover effect */
+section div:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 113, 197, 0.3);
+}
+
+/* Year heading */
+section div h2 {
+  color: #0071c5;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #0071c5;
+  padding-bottom: 8px;
+}
+
+/* Milestone title */
+section div h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Description paragraph */
+section div p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  
+  /* Initially hide description - show on hover */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+/* Card images */
+section div img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Show description on hover */
+section div:hover p {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+/* ===================================
+   INSTRUCTION TEXT
+   =================================== */
+
+body > p {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1rem;
+  color: #666;
+  background-color: #f5f5f5;
+  font-style: italic;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE
+   =================================== */
+
+@media screen and (max-width: 768px) {
+  
+  /* Hero Section - Mobile */
+  header {
+    padding: 50px 20px;
+  }
+  
+  header img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  /* Timeline Section - Mobile */
+  section {
+    flex-direction: column;
+    overflow-x: visible;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+  
+  /* Timeline Cards - Mobile */
+  section div {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Always show description on mobile */
+  section div p {
+    max-height: none;
+    opacity: 1;
+    margin-top: 15px;
+  }
+  
+  /* Adjust hover effect for mobile */
+  section div:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* ===================================
+   TABLET RESPONSIVE
+   =================================== */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  section {
+    padding: 50px 30px;
+  }
+  
+  section div {
+    min-width: 280px;
+    max-width: 280px;
+  }
+}
