@@ -1,10 +1,5 @@
-/* Add your CSS here */
-/* ===================================
-   INTEL SUSTAINABILITY TIMELINE
-   CSS Stylesheet
-   =================================== */
 
-/* Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +13,7 @@ body {
   background-color: #f5f5f5;
 }
 
-/* ===================================
-   HERO SECTION
-   =================================== */
+/* HERO */
 
 header {
   background: linear-gradient(135deg, #0071c5 0%, #0054a6 100%);
@@ -39,7 +32,7 @@ header img {
   width: 120px;
   height: auto;
   margin-bottom: 30px;
-  filter: brightness(0) invert(1); /* Makes logo white */
+  filter: brightness(0) invert(1); /* logo */
 }
 
 header h1 {
@@ -58,9 +51,7 @@ header p {
   opacity: 0.95;
 }
 
-/* ===================================
-   TIMELINE SECTION
-   =================================== */
+/* TIMELINE */
 
 section {
   padding: 60px 40px;
@@ -68,19 +59,19 @@ section {
   overflow-y: hidden;
   background-color: #ffffff;
   
-  /* Horizontal scrolling with flexbox */
+  /* horizontal scroll */
   display: flex;
   gap: 30px;
   
-  /* Smooth scrolling */
+  /* smooth scroll */
   scroll-behavior: smooth;
   
-  /* Hide scrollbar for cleaner look (optional) */
+  /* scrollbar */
   scrollbar-width: thin;
   scrollbar-color: #0071c5 #e0e0e0;
 }
 
-/* Webkit browsers scrollbar styling */
+/* webkit scrollbar */
 section::-webkit-scrollbar {
   height: 10px;
 }
@@ -98,39 +89,37 @@ section::-webkit-scrollbar-thumb:hover {
   background: #0054a6;
 }
 
-/* ===================================
-   TIMELINE CARDS
-   =================================== */
+/* CARDS */
 
 section div {
-  /* Card sizing */
+  /* card size */
   min-width: 300px;
   max-width: 300px;
   
-  /* Card styling */
+  /* card style */
   background: white;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
-  /* Prevent shrinking */
+  /* no shrink */
   flex-shrink: 0;
   
-  /* Transition for smooth hover effects */
+  /* transitions */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-  /* Initial state - hide description */
+  /* description hidden */
   position: relative;
   overflow: hidden;
 }
 
-/* Card hover effect */
+/* hover */
 section div:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 12px 24px rgba(0, 113, 197, 0.3);
 }
 
-/* Year heading */
+/* year */
 section div h2 {
   color: #0071c5;
   font-size: 2rem;
@@ -140,7 +129,7 @@ section div h2 {
   padding-bottom: 8px;
 }
 
-/* Milestone title */
+/* milestone */
 section div h3 {
   color: #333;
   font-size: 1.3rem;
@@ -148,20 +137,20 @@ section div h3 {
   font-weight: 600;
 }
 
-/* Description paragraph */
+/* description */
 section div p {
   color: #666;
   font-size: 0.95rem;
   line-height: 1.6;
   
-  /* Initially hide description - show on hover */
+  /* hidden */
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
 }
 
-/* Card images */
+/* images */
 section div img {
   width: 100%;
   height: auto;
@@ -169,16 +158,14 @@ section div img {
   margin-bottom: 12px;
 }
 
-/* Show description on hover */
+/* show on hover */
 section div:hover p {
   max-height: 300px;
   opacity: 1;
   margin-top: 15px;
 }
 
-/* ===================================
-   INSTRUCTION TEXT
-   =================================== */
+/* NOTE */
 
 body > p {
   text-align: center;
@@ -189,13 +176,11 @@ body > p {
   font-style: italic;
 }
 
-/* ===================================
-   RESPONSIVE DESIGN - MOBILE
-   =================================== */
+/* MOBILE */
 
 @media screen and (max-width: 768px) {
   
-  /* Hero Section - Mobile */
+  /* hero - mobile */
   header {
     padding: 50px 20px;
   }
@@ -214,7 +199,7 @@ body > p {
     font-size: 1rem;
   }
   
-  /* Timeline Section - Mobile */
+  /* timeline - mobile */
   section {
     flex-direction: column;
     overflow-x: visible;
@@ -222,28 +207,26 @@ body > p {
     gap: 25px;
   }
   
-  /* Timeline Cards - Mobile */
+  /* cards - mobile */
   section div {
     min-width: 100%;
     max-width: 100%;
   }
   
-  /* Always show description on mobile */
+  /* show description */
   section div p {
     max-height: none;
     opacity: 1;
     margin-top: 15px;
   }
   
-  /* Adjust hover effect for mobile */
+  /* hover - mobile */
   section div:hover {
     transform: scale(1.02);
   }
 }
 
-/* ===================================
-   TABLET RESPONSIVE
-   =================================== */
+/* TABLET */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   header h1 {
